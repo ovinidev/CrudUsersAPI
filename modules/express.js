@@ -82,6 +82,6 @@ app.delete("/users/:id", async (req, res) => {
   }
 });
 
-app.listen(port, () => {
+app.listen(process.env.PORT, () => {
   console.log(`Rodando server na porta ${process.env.PORT}`);
 });
